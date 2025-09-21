@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles_forFrontend.css">
+    <title>Frontend</title>
+</head>
+<body class="html" >
+<nav class="navbar">
+    <ul>
+      <li><a href="#home1">Task 1</a></li>
+      <li><a href="#home2">Task 2</a></li>
+      <li><a href="#home3">Task 3</a></li>
+      <li><a href="#home4">Task 4</a></li>
+    </ul>
+</nav>
+<section id="home1">
+    <h2>Task 1: Simple Webpage Layout</h2>
+    <div class="task1-layout">
+        <div class="task1-header">
+            <h1>Website Title</h1>
+            </div>
+                <div class="task1-nav">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li style="float:right"><a href="#">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contract</a></li>
+                    </ul>
+                </div>
+                
+                <div class="main-content">
+                    <div class="sidebar">
+                        <h3>Menu</h3>
+                        <ul>
+                            <li><a href="#">Item 1</a></li>
+                            <li><a href="#">Item 2</a></li>
+                            <li><a href="#">Item 3</a></li>
+                            <li><a href="#">Item 4</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="aside-content">
+                        <h2>Main Content</h2>
+                        <p>info about plans, contract managing.</p>
+                        <p>info about plans, contract managing.</p>
+                    </div>
+                    <div class="addebar">
+                        <h4>Advertisement</h4>
+                        <p>Ad content goes here</p>
+                </div>
+                <div class="task1-footer">
+                    <p>&copy; 2025 Contract Management. All rights reserved.</p>
+                </div>
+            </div>
+
+</section>
+<section id="home2">
+    <h2 style="color:rgb(224, 201, 201);">Task 2: Tribute Page</h2>
+            
+    <div class="tribute-page" style="background-image: url('https://avatars.mds.yandex.net/i?id=158b97c4481058e433d44e9b70b5cadb2426e07b-15272048-images-thumbs&n=13');">
+        <div class="tribute-container">
+            <div class="tribute-header">
+                <h2>Actor and Musician</h2>
+                </div>
+                <div class="tribute-img">
+                    <img src="https://avatars.mds.yandex.net/i?id=a29a298c351c4e08c19cc6f6281cd1ec840cc17d-8285735-images-thumbs&n=13" alt="Michael C. Hall">
+                    <br><br>
+                    <h1 style="font-size: 3.5rem;">Michael C. Hall</h1>
+                </div>
+                    <div class="tribute-content">
+                        <h3>About Michael</h3>
+                        <p>Michael Carlyle Hall (born February 1, 1971) is an American actor and musician. He is best known for his roles as Dexter Morgan on the Showtime series Dexter and David Fisher on the HBO series Six Feet Under.</p>
+                        
+                        <h3>Notable Career Events</h3>
+                        <ol>
+                            <li>1999 - Landed breakthrough role as David Fisher in Six Feet Under</li>
+                            <li>2006 - Began starring as Dexter Morgan in Dexter</li>
+                            <li>2010 - Won a Golden Globe for Best Actor for Dexter</li>
+                            <li>2013 - Made Broadway debut in the musical Hedwig and the Angry Inch</li>
+                            <li>2021 - Returned to play Dexter Morgan in Dexter: New Blood</li>
+                        </ol>
+                        
+                        <h3>Key Contributions</h3>
+                        <ul>
+                            <li>Portrayal of complex, morally ambiguous characters</li>
+                            <li>Advocacy for cancer research and awareness</li>
+                            <li>Work in both television and theater</li>
+                            <li>Musical performances with band Princess Goes</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="text-align: center;">
+                        <a href="https://en.wikipedia.org/wiki/Michael_C._Hall" class="btn" target="_blank">Learn More on Wikipedia</a>
+                    </div>
+                </div>
+            </div> 
+</section>
+<section id="home3">
+            <h2>Task 3: CSS Table and Form</h2>
+            
+            <div class="table-section">
+                <h3>Student Grades Table</h3>
+                <table class="grades-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Subject</th>
+                            <th>Grade</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Smith</td>
+                            <td>Mathematics</td>
+                            <td>A</td>
+                            <td rowspan="2">Excellent</td>
+                        </tr>
+                        <tr>
+                            <td>Emma Johnson</td>
+                            <td>Science</td>
+                            <td>A-</td>
+                        </tr>
+                        <tr>
+                            <td>Michael Brown</td>
+                            <td>History</td>
+                            <td>B+</td>
+                            <td>Good</td>
+                        </tr>
+                        <tr>
+                            <td>Sarah Davis</td>
+                            <td>English</td>
+                            <td>C+</td>
+                            <td>Average</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="form-section">
+                <h3>Feedback Form</h3>
+                <div class="feedback-form">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="role">Role:</label>
+                            <select id="role" class="form-control">
+                                <option value="student">Student</option>
+                                <option value="teacher">Teacher</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Would you recommend our website?</label>
+                            <div class="radio-group">
+                                <input type="radio" id="yes" name="recommend" value="yes">
+                                <label for="yes">Yes</label>
+                                
+                                <input type="radio" id="no" name="recommend" value="no">
+                                <label for="no">No</label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comments">Comments:</label>
+                            <textarea id="comments" class="form-control" rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Submit Feedback</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+<section class="sectionFooter" id="home4">
+    <h2>Task 4: Contract Management System</h2>
+    <h3> https://www.figma.com/design/0kPrZSYqNFG2FIaQpQmWFR/Untitled?node-id=0-1&t=T7SQ2gHmBeY4c9Bt-1 </h3>
+<footer>
+            <p>Assignment 2 - CSS Styling | Michael C. Hall</p>
+            <p>Published on GitHub Pages: <a href="#" style="color: #3498db;">https://michaelchall.github.io/assignment2</a></p>
+</footer>
+</body>
+</html>
+
+<!--<ul>    
+        <li><a href="https://en.wikipedia.org/wiki/Michael_C._Hall" target="_blank">Wikipedia</a></li>
+        <li><a href="https://www.imdb.com/name/nm0351221/" target="_blank">IMDB</a></li>
+        <li><a href="https://www.rottentomatoes.com/celebrity/michael_chall" target="_blank">Rotten Tomatoes</a></li>
+        <li><a href="https://www.tvguide.com/celebrities/michael-c-hall/166641/" target="_blank">TV Guide</a></li>
+        <li><a href="https://www.britannica.com/biography/Michael-C-Hall" target="_blank">Britannica</a></li>
+ </ul>-->
+
+<!--<footer>
+    <div class="Task1">
+    <h1 style="font-size: 3rem; text-align: center;">Michael C.Hall</h1>
+    <h2 style="text-align: center;">Tribute Page</h2>
+</div>
+<div class="div_fortask1">
+    <h1>Задача 1</h1>
+    <img src="https://avatars.mds.yandex.net/i?id=e2348a1eefe6cc4e6d3171bdd8b275f1fe80e242-9100078-images-thumbs&n=13" alt="Michael C.Hall">
+</div>
+    <p>&copy; 2024 My Website</p>
+</footer>-->
